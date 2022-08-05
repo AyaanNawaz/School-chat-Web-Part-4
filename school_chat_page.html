@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MicroGoogle: School Chat Web - Message Page</title>
+	<link rel = "icon" href = 
+"tick.png" 
+        type = "icon">
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="school_chat_page.css">
+</head>
+<body>
+
+<div class="container">
+	<br>
+	<button id="logout" onclick="back()" style="float: left;" class="glyphicon glyphicon-log-out btn btn-danger"> Back</button>
+	<button id="logout" onclick="logOut()" class="glyphicon glyphicon-log-out btn btn-danger"> Logout</button>
+	<center>
+        <h1 class="header">	
+			MicroGoogle               <sup>
+		<img src="Google_Earth_icon.svg.png">
+		</sup>
+	</h1>
+	<h1>School Chat Web</h1>
+	<br>
+		<div id="output" style="text-align: left;margin-bottom: 70px;"> </div>
+	</center>
+</div>
+<br>
+<br>
+<br>
+
+<center>
+	<div class="input_div_message_page">
+	
+		<form autocomplete="off">
+			<br>
+			<label>Send Message:</label>
+		
+<input type="text" id="msg" class="form-control" placeholder="Enter Message">
+
+</form>
+<span>
+	<sup>
+	
+		<input type="image" style="float: left;" id="mic" name="Name of image button" src="tick.png">  
+		<input type="image" onclick="mic()" style="float: right;" id="mic" name="Name of image button" src="tick.png">  
+		<button onclick="send()" style="float: center;" id="send" class="btn btn-success">Send</button>
+	
+	
+	</sup>
+</span>
+	</div>
+	<br>
+</center>
+
+<script src="school_chat_page.js"></script>
+</body>
+</html>

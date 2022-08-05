@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MicroGoogle: School Chat Web - Add Room Or Choose Room</title>
+	
+
+	 <link rel = "icon" href = 
+"2.png" 
+        type = "icon">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="stylesheet" type="text/css" href="school_chat_room.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<br>
+	<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logOut()"> Logout</button>
+	<center>
+		<h1 class="header">	
+			MicroGoogle               <sup>
+		<img src="Google_Earth_icon.svg.png">
+		</sup>
+	</h1>
+	<h1>School Chat Web</h1>
+	<br>
+	<h3 class="color_white" id="user_name" style="font-family:Times New Roman;"></h3>
+
+	<br>
+	<div class="form-group input_div_room_page">
+		<form autocomplete="off">
+		<label style="color:rgb(255, 151, 15);">#AddRoom:</label>
+<input type="text" id="room_name" class="form-control" style="width:50%;" placeholder="Enter Room Name">
+</form>
+	</div>
+	<button class="btn btn-success" onclick="addRoom()">Add Room</button>
+	<h3 class="color_white" style="color: rgb(224, 224, 224);">#TRENDINGROOMS</h3>
+<div style="cursor: pointer; font-size:20px; background-color:rgb(198, 253, 255); font-family:Verdana, Geneva, Tahoma, sans-serif;" id="output"></div>
+<br>
+</center>
+</div>
+	</body>
+	<script src="school_chat_room.js"></script>
+	</html>
